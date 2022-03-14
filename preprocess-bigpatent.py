@@ -17,7 +17,7 @@ dataset = load_dataset("big_patent","g")
 from joblib import Parallel, delayed
 def big_patent_preprocess(n_jobs, batchsize=100):
     from datasets import load_dataset
-    from gpt2.data.dataset import CorpusDataset, UserLvlDataset:q
+    from gpt2.data.dataset import CorpusDataset, UserLvlDataset
     
     def text2tensor(dset, i):
         for j in range(i,batchsize+i):
